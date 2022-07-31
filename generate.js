@@ -2,7 +2,7 @@ const MerkleTree = require('./index.js');
 const fs = require('fs');
 const bs58check = require('bs58check');
 
-const utxos = JSON.parse(fs.readFileSync('data/utxos.json'));
+const utxos = JSON.parse(fs.readFileSync('./data/utxos.json'));
 
 console.log('Total ' + utxos.length + ' UTXOs');
 
